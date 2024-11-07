@@ -84,7 +84,7 @@ export default {
     async handleLogin() {
       if (this.isSignupMode) {
         try {
-          const response = await axios.post("http://localhost:3000/users", {
+          const response = await axios.post("https://api.itmf.app.br/users", {
             username: this.username,
             password: this.password,
           });
@@ -115,7 +115,7 @@ export default {
         }
       } else {
         try {
-          const response = await axios.post("http://localhost:3000/users/login", {
+          const response = await axios.post("https://api.itmf.app.br/users/login", {
             username: this.username,
             password: this.password,
           });
